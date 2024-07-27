@@ -1,9 +1,12 @@
-/* public/style.css */
-body {
-  font-family: Arial, sans-serif;
+/* CSS Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
   background-color: #6589a9;
 }
 
@@ -14,7 +17,6 @@ header {
   justify-content: center;
   background-color: #274472;
   color: #dad7d7;
-  text-align: center;
   gap: 20px;
   padding: 20px;
 }
@@ -32,25 +34,40 @@ header h1 {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   background: #f2e96b;
   padding: 20px;
 }
 
-.creator {
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
-  font-size: 20px;
-  color: #4b3f35;
+.footerText {
+  text-align: center;
   font-weight: bold;
+  color: #6589a9;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  background-color: #6589a9;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+.social-media .link {
+  font-size: 30px;
+  color: #f2e96b;
+  text-decoration: none;
+}
+
+.social-media .link:hover {
+  color: #4b3f35;
 }
 
 .link {
-  font-family: Arial, sans-serif;
-  font-weight: normal;
-  box-sizing: border-box;
-  font-size: 20px;
-  color: #274472;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .gallery-container {
@@ -68,10 +85,11 @@ footer {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .gallery-item img {
@@ -81,36 +99,7 @@ footer {
   transition: transform 0.3s ease;
 }
 
-.lightbox {
-  display: flex;
-  flex-direction: column-reverse;
-  width: 100%;
-  z-index: 10000;
-  font-weight: 400;
-  outline: 0;
-  gap: 5px;
-}
-
-.lb-container {
-  color: #e29c68;
-}
-
-.lightbox .lb-image {
-  border: 7px solid #e29c68 !important;
-}
-
-.lb-nav a.lb-prev {
-  width: 50% !important;
-}
-.lb-nav a.lb-next {
-  width: 50% !important;
-}
-
-.lb-data .lb-details {
-  display: none;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 996px) {
   header {
     padding: 10px;
   }
