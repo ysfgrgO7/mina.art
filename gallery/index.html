@@ -15,6 +15,9 @@
 
   <header>
     <div class="headerTitle">
+      <button class="hamburger" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
       <img src="../logo.svg" alt="logo" />
       <h1>Artist Mina Maged</h1>
     </div>
@@ -22,7 +25,16 @@
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="#">Gallery</a></li>
+          <li><a href="../gallery/index.html">Gallery</a></li>
+          <li><a href="../about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobileMenu">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../gallery/index.html">Gallery</a></li>
           <li><a href="../about.html">About Me</a></li>
         </ul>
       </nav>
@@ -56,6 +68,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
   <script src="script.js"></script>
+  <script src="../mobilemenu.js"></script>
 </body>
 
 </html>

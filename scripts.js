@@ -38,4 +38,11 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Could not copy text: ", err);
       });
   });
+
+  const hamburger = document.querySelector(".hamburger");
+  const mobileMenu = document.querySelector(".mobileMenu");
+
+  hamburger.addEventListener("click", function () {
+    mobileMenu.classList.toggle("active");
+  });
 });
