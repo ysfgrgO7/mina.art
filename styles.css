@@ -6,30 +6,45 @@
   --brown: #4b3f35;
 }
 
-/* Website */
+/* Ensure full height for html and body */
+html,
 body {
-  font-family: Arial, sans-serif;
+  height: 100%;
   margin: 0;
-  padding: 0;
+}
+
+/* Main wrapper to use flexbox */
+body {
+  display: flex;
+  flex-direction: column;
   background-color: var(--bg);
 }
 
+/* Website */
 header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--bgDarker);
   color: var(--fg);
   gap: 20px;
   padding: 20px;
 }
 
-.HeaderText {
+.headerTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.headerLinks {
   display: flex;
   padding: 0;
   flex-direction: column;
   align-items: flex-start;
+  gap: 5px;
 }
 
 header img {
@@ -42,7 +57,9 @@ header h1 {
 }
 
 nav ul {
+  display: flex;
   list-style: none;
+  gap: 5px;
   padding: 0;
   margin: 0;
 }
@@ -54,11 +71,17 @@ nav ul li {
 
 nav ul li a {
   color: var(--fg);
+  font-size: 1.2rem;
   text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--yellow);
 }
 
 main {
   padding: 20px;
+  flex: 1; /* Allow main content to take up remaining space */
 }
 
 footer {
@@ -68,6 +91,7 @@ footer {
   justify-content: center;
   background: var(--yellow);
   padding: 20px;
+  margin-top: auto; /* Push footer to the bottom */
 }
 
 .social-media {
@@ -105,6 +129,7 @@ footer {
 
 .splide__list {
   display: flex;
+  gap: 10px;
 }
 
 .splide__slide {
@@ -112,12 +137,12 @@ footer {
   justify-content: center;
   align-items: center;
   width: auto;
-  height: auto; /* Set a fixed height for the slides */
+  height: auto;
 }
 
 .splide__slide img {
-  max-width: 90%; /* Ensure the image scales to fit within the slide */
-  max-height: 90%; /* Ensure the image scales to fit within the slide */
+  max-width: 100%; /* Ensure the image scales to fit within the slide */
+  max-height: 80vh; /* Ensure the image scales to fit within the slide */
   object-fit: contain; /* Maintain aspect ratio while fitting within the container */
 }
 
@@ -209,25 +234,78 @@ footer {
 
 @media (max-width: 996px) {
   header {
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
+    text-align: center;
   }
 
   header h1 {
     font-size: 1.5em;
   }
 
+  header img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .social-media {
+    gap: 5px;
+  }
+
+  .social-media .link {
+    font-size: 24px;
+  }
+
+  /* Home */
+  .splide {
+    width: 90%;
+  }
+
+  .splide__slide img {
+    max-height: 30vh;
+  }
+
+  /* About */
+  .about-me {
+    padding: 10px;
+  }
+
+  .about-me h2 {
+    font-size: 1.5em;
+  }
+
+  .about-me p {
+    font-size: 1rem;
+  }
+
   /* Gallery */
   .gallery {
-    padding: 5px;
+    padding: 10px;
+  }
+
+  .galleryTitle {
+    font-size: 2em;
   }
 
   .gallery-container {
-    padding: 5px;
+    padding: 10px;
   }
 
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 10px;
   }
 
   .gallery-item:hover {
