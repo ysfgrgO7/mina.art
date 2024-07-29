@@ -37,6 +37,7 @@ header {
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  z-index: 1001; /* Ensure the hamburger is above other elements */
 }
 
 .hamburger {
