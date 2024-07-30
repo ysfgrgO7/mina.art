@@ -253,6 +253,14 @@ footer {
   color: var(--fg);
 }
 
+.imgFloat {
+  float: right; /* or float: right; to wrap text on the other side */
+  margin-right: 15px; /* Space between image and text */
+  margin-bottom: 10px; /* Space below the image */
+  max-width: 40%; /* Adjust width as needed */
+  max-height: 40%;
+}
+
 /* Gallery */
 .gallery {
   padding: 85px;
