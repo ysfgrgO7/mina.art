@@ -299,20 +299,24 @@ footer {
     text-align: center;
   }
 
-  .hamburger {
-    display: block;
-  }
-
   header h1 {
+    display: none;
     text-align: left;
-    width: 50%;
     font-size: 1.5em;
-    overflow-wrap: break-word;
   }
 
   header img {
     width: 4rem;
     height: 4rem;
+  }
+
+  .headerTitle {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   .headerLinks {
