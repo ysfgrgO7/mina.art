@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles.css">
-  <link rel="stylesheet" href="../comp/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/svg" href="../logo.svg" />
   <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"></script>
   <title>Artist Mina Maged</title>
@@ -14,16 +16,35 @@
 
 <body>
 
-  <script>
-    fetch('../comp/index.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header').innerHTML = data;
-      });
-  </script>
-
-
-  <header id="header"></header>
+  <header>
+    <div class="headerTitle">
+      <img src="../logo.svg" alt="logo" />
+      <h1>Artist Mina Maged</h1>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div class="headerLinks">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../gallery/index.html">Gallery</a></li>
+          <li><a href="../about.html">About Me</a></li>
+          <li><a href="../goodpref.html">Guide To A Good Preference</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobileMenu">
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../gallery/index.html">Gallery</a></li>
+          <li><a href="../about.html">About Me</a></li>
+          <li><a href="../goodpref.html">Guide To A Good Preference</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <h2 class="galleryTitle">Gallery</h2>
