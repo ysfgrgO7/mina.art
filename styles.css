@@ -1,7 +1,6 @@
 :root {
   --bg: #DFDDD2;
-  --blue: #3E607E;
-  --fg: var(--blue);
+  --fg: #3E607E;
   --bgDarker: #B0AD9E;
 }
 
@@ -47,7 +46,7 @@ p {
 .hamburger {
   display: none;
   background-color: transparent;
-  color: var(--blue);
+  color: var(--fg);
   border: 0;
   font-size: 2rem;
   cursor: pointer;
@@ -102,12 +101,12 @@ p {
 }
 
 .mobileMenu nav ul li a:hover {
-  background-color: var(--blue);
+  background-color: var(--fg);
   color: var(--bg);
 }
 
 .mobileMenu nav ul li a.active {
-  background-color: var(--blue);
+  background-color: var(--fg);
   color: var(--bg);
 }
 
@@ -151,7 +150,7 @@ nav ul li a {
 
 .headerLinks nav ul li a.active {
   color: var(--bgDarker); /* Optional: change color to highlight active link */
-  background-color: var(--blue);
+  background-color: var(--fg);
   padding: 3px;
   border: 3px;
   border-radius: 10px;
@@ -159,7 +158,7 @@ nav ul li a {
 
 
 nav ul li a:hover {
-  color: var(--blue);
+  color: var(--fg);
 }
 
 main {
@@ -187,7 +186,7 @@ footer {
 
 .social-media .link {
   font-size: 30px;
-  color: var(--blue);
+  color: var(--fg);
   text-decoration: none;
 }
 
