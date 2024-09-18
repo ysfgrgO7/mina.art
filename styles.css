@@ -106,6 +106,11 @@ p {
   color: var(--bg);
 }
 
+.mobileMenu nav ul li a.active {
+  background-color: var(--blue);
+  color: var(--bg);
+}
+
 .headerLinks {
   display: flex;
   padding: 0;
@@ -127,7 +132,7 @@ header h1 {
 nav ul {
   display: flex;
   list-style: none;
-  gap: 15px;
+  gap: 25px;
   padding: 0;
   margin: 0;
 }
@@ -138,10 +143,20 @@ nav ul li {
 }
 
 nav ul li a {
+  font-family: "Rubik", sans-serif;
   color: var(--fg);
   font-size: 1.2rem;
   text-decoration: none;
 }
+
+.headerLinks nav ul li a.active {
+  color: var(--bgDarker); /* Optional: change color to highlight active link */
+  background-color: var(--blue);
+  padding: 3px;
+  border: 3px;
+  border-radius: 10px;
+}
+
 
 nav ul li a:hover {
   color: var(--blue);
@@ -257,11 +272,16 @@ footer {
   margin: 0 auto;
 }
 
-.about-me h2 {
+
+.about-me h2,
+.galleryTitle {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 20px;
-  color: var(--blue);
+  color: transparent;
+  background-image: linear-gradient(to left, var(--fg), var(--bgDarker) );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-me p {
@@ -282,13 +302,6 @@ footer {
 /* Gallery */
 .gallery {
   padding: 85px;
-}
-
-.galleryTitle {
-  text-align: center;
-  font-size: 4em;
-  margin-bottom: 20px;
-  color: var(--blue);
 }
 
 .gallery-container {
@@ -385,8 +398,9 @@ footer {
     padding: 10px;
   }
 
+  .galleryTitle,
   .about-me h2 {
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
 
   .about-me p {
@@ -396,10 +410,6 @@ footer {
   /* Gallery */
   .gallery {
     padding: 10px;
-  }
-
-  .galleryTitle {
-    font-size: 2em;
   }
 
   .gallery-container {
