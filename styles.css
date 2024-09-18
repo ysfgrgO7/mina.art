@@ -1,9 +1,8 @@
 :root {
-  --bg: #6589a9;
-  --fg: #dad7d7;
-  --bgDarker: #274472;
-  --yellow: #f2e96b;
-  --brown: #4b3f35;
+  --bg: #DFDDD2;
+  --blue: #3E607E;
+  --fg: var(--blue);
+  --bgDarker: #B0AD9E;
 }
 
 /* Ensure full height for html and body */
@@ -33,6 +32,10 @@ header {
   padding: 20px;
 }
 
+p {
+  color: var(--fg)
+}
+
 .headerTitle {
   display: flex;
   flex-direction: row;
@@ -44,7 +47,7 @@ header {
 .hamburger {
   display: none;
   background-color: transparent;
-  color: var(--yellow);
+  color: var(--blue);
   border: 0;
   font-size: 2rem;
   cursor: pointer;
@@ -99,7 +102,7 @@ header {
 }
 
 .mobileMenu nav ul li a:hover {
-  background-color: var(--yellow);
+  background-color: var(--blue);
   color: var(--bg);
 }
 
@@ -141,7 +144,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--yellow);
+  color: var(--blue);
 }
 
 main {
@@ -154,7 +157,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--yellow);
+  background: var(--bgDarker);
   padding: 20px;
   margin-top: auto; /* Push footer to the bottom */
 }
@@ -169,12 +172,12 @@ footer {
 
 .social-media .link {
   font-size: 30px;
-  color: var(--yellow);
+  color: var(--blue);
   text-decoration: none;
 }
 
 .social-media .link:hover {
-  color: var(--brown);
+  color: var(--bgDarker);
 }
 
 .link {
@@ -188,7 +191,7 @@ footer {
 .homeTitle {
   font-family: "Playwrite AR", cursive;
   font-size: 2.5rem;
-  color: var(--yellow);
+  color: var(--blue);
   text-align: center;
 }
 
@@ -254,7 +257,7 @@ footer {
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
-  color: var(--yellow);
+  color: var(--blue);
 }
 
 .about-me p {
@@ -281,7 +284,7 @@ footer {
   text-align: center;
   font-size: 4em;
   margin-bottom: 20px;
-  color: var(--yellow);
+  color: var(--blue);
 }
 
 .gallery-container {
