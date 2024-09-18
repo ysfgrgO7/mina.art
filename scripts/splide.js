@@ -24,11 +24,4 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: false,
     arrows: true,
   }).mount();
-
-  const hamburger = document.querySelector(".hamburger");
-  const mobileMenu = document.querySelector(".mobileMenu");
-
-  hamburger.addEventListener("click", function () {
-    mobileMenu.classList.toggle("active");
-  });
 });
