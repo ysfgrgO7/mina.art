@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // NavBar
-    fetch('../components/navbar.html')  // Adjusted path to access navbar.html
+    fetch('../components/navbar.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('header').innerHTML = data;
@@ -8,8 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // MobileMenu
         const hamburger = document.querySelector(".hamburger");
         const mobileMenu = document.querySelector(".mobileMenu");
+
+        // Toggle menu and hamburger icon
         hamburger.addEventListener("click", () => {
             mobileMenu.classList.toggle("active");
+            hamburger.classList.toggle("active");  // Add a class to change the icon to 'X'
         });
 
         // Set the active class on the current page's link for desktop
@@ -35,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Footer
-    fetch('../components/footer.html')  // Adjusted path to access footer.html
+    fetch('../components/footer.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('footer').innerHTML = data;

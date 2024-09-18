@@ -53,6 +53,16 @@ p {
   z-index: 1001; /* Ensure the hamburger is above other elements */
 }
 
+.hamburger i {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+/* Optional styling for smooth transition */
+.hamburger.active i {
+  transform: rotate(90deg);  /* Adds a rotation effect when toggled */
+}
+
 .mobileMenu {
   display: none;
   flex-direction: column;
