@@ -27,19 +27,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     });
 
     // Set up the phone link to copy to clipboard
-    const phoneLink = document.getElementById("phone-link");
-    phoneLink.addEventListener("click", function (event) {
-      event.preventDefault();
-      const phoneNumber = "+201096162068";
-      navigator.clipboard
-        .writeText(phoneNumber)
-        .then(() => {
-          alert("Phone number copied to clipboard!");
-        })
-        .catch((err) => {
-          console.error("Could not copy text: ", err);
-        });
-    });
   } catch (error) {
     console.error("Error fetching image count:", error);
   }
