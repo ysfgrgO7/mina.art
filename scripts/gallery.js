@@ -12,11 +12,9 @@ document.addEventListener("DOMContentLoaded", async function () {
       const img = document.createElement("img");
       img.src = `${imageDir}${i}.jpeg`;
       img.alt = `Image ${i}`;
-
       const galleryItem = document.createElement("div");
       galleryItem.classList.add("gallery-item");
       galleryItem.appendChild(img);
-
       gallery.appendChild(galleryItem);
     }
 
@@ -26,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       background: "rgba(0, 0, 0, 0.5)",
     });
 
-    // Set up the phone link to copy to clipboard
+  // Error Handling 
   } catch (error) {
     console.error("Error fetching image count:", error);
   }
