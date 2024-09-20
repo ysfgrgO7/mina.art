@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const response = await fetch("../img.json");
     const imageCount = await response.json(); // Directly returns the number
 
-    const imageDir = "../img/";
+    const imageDir = "../images/gallery/";
     const gallery = document.getElementById("gallery");
 
     // Generate the gallery items based on the image count from the JSON file

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const slide = document.createElement("li");
     slide.className = "splide__slide";
     const img = document.createElement("img");
-    img.src = `./img/${imageNumber}.jpeg`;
+    img.src = `../images/gallery/${imageNumber}.jpeg`;
     img.alt = `Art piece ${imageNumber}`;
     slide.appendChild(img);
     splideList.appendChild(slide);
