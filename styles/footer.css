@@ -1,0 +1,38 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--bgDarker);
+  padding: 20px;
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+p {
+  color: var(--fg)
+}
+
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  background-color: var(--bg);
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+.social-media .link {
+  font-size: 30px;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.social-media .link:hover {
+  color: var(--bgDarker);
+}
+
+.link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
