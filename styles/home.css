@@ -3,7 +3,6 @@
   font-family: "Playwrite AR", cursive;
   font-size: 2.5rem;
   text-align: center;
-
   color: transparent;
   background-image: linear-gradient(to left, var(--fg), var(--bgDarker) );
   -webkit-background-clip: text;

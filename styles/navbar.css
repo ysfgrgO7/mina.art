@@ -58,7 +58,6 @@ nav ul li {
 }
 
 nav ul li a {
-  font-family: "Rubik", sans-serif;
   color: var(--fg);
   font-size: 1.2rem;
   text-decoration: none;
