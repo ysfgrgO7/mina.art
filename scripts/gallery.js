@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       background: "rgba(0, 0, 0, 0.5)",
     });
 
-  // Error Handling 
+    // Error Handling
   } catch (error) {
     console.error("Error fetching image count:", error);
   }

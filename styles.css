@@ -1,8 +1,8 @@
 /* Base */
 :root {
-  --bg: #DFDDD2;
-  --fg: #3E607E;
-  --bgDarker: #B0AD9E;
+  --bg: #dfddd2;
+  --fg: #3e607e;
+  --bgDarker: #b0ad9e;
 }
 
 /* Ensure full height for html and body */
@@ -37,9 +37,8 @@ footer {
 }
 
 p {
-  color: var(--fg)
+  color: var(--fg);
 }
-
 
 .social-media {
   display: flex;
@@ -151,7 +150,7 @@ nav ul li a:hover {
 
 /* Optional styling for smooth transition */
 .hamburger.active i {
-  transform: rotate(90deg);  /* Adds a rotation effect when toggled */
+  transform: rotate(90deg); /* Adds a rotation effect when toggled */
 }
 
 .mobileMenu {
@@ -217,7 +216,7 @@ nav ul li a:hover {
   font-size: 2.5rem;
   text-align: center;
   color: transparent;
-  background-image: linear-gradient(to left, var(--fg), var(--bgDarker) );
+  background-image: linear-gradient(to left, var(--fg), var(--bgDarker));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -286,7 +285,7 @@ nav ul li a:hover {
   font-size: 3em;
   margin-bottom: 20px;
   color: transparent;
-  background-image: linear-gradient(to left, var(--fg), var(--bgDarker) );
+  background-image: linear-gradient(to left, var(--fg), var(--bgDarker));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
